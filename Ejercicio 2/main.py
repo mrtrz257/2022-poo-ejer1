@@ -22,3 +22,6 @@ if __name__ == '__main__':
             opcion = int(input("MENU:\nOpción 1: Consultar cantidad de Millas\nOpción 2: Acumular Millas\nOpcion 3: Canjear Millas\nOpcion 4: Salir\nEligir opción: "))
     else:
         print("Número de viajero no corresponde")
+    print("TEST:")
+    control1 = ViajeroFrecuente(5, 43340662, "Nicolas", "Garcia", 6500.89)
+    print(control1)
