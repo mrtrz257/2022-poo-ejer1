@@ -10,6 +10,8 @@ class ViajeroFrecuente:
         self.__nombre = str(nombre)
         self.__apellido = str(apellido)
         self.__millas_acum = int(millas_acum)
+    def __str__(self):
+        return '{} {} {} {} {}'.format(self.__num_viajero, self.__dni, self.__nombre, self.__apellido, self.__millas_acum)
     def cantidadTotaldeMillas(self):
         return self.__millas_acum
     def acumularMillas(self, acumulacionMillas):
