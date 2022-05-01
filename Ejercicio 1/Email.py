@@ -19,7 +19,7 @@ class Email:
         return self.__contrasena
     def modificaContrasena(self, contrasena):
         self.__contrasena = contrasena
-    def crearCuenta(self, direccionMail):
+    def crearCuenta(self, direccionMail):   #Crea una instancia de la clase Email a partir de una direccion de email entera
         primerSplit = direccionMail.split("@", 1)
         segundoSplit = primerSplit[1].split(".", 1)
         self.__idCuenta = primerSplit[0]
