@@ -15,6 +15,8 @@ class Email:
         return self.__dominio
     def getIdCuenta(self):
         return self.__idCuenta
+    def getContrasena(self):
+        return self.__contrasena
     def modificaContrasena(self, contrasena):
         self.__contrasena = contrasena
     def crearCuenta(self, direccionMail):
