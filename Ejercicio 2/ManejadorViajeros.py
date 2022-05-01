@@ -7,7 +7,7 @@ class ManejadorViajero:
         self.__listaViajeros = []
     def agregarViajero(self, unViajero):
         self.__listaViajeros.append(unViajero)
-    def testViajeros(self):
+    def testViajeros(self):             #Abre el archivo y crea instancias de la clase ViajeroFrecuente
         archivo = open("archivoViajeros.csv")
         reader = csv.reader(archivo, delimiter=';')
         band = True
