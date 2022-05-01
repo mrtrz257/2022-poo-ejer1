@@ -26,3 +26,7 @@ if __name__=='__main__':
     if (lista.buscarIdentificador(idDeCuenta) > 1):
         print("El identificador esta repetido")
     else: print("El identificador NO se repite o NO se encontro")
+    print("TEST:")
+    control1 = Email("alumno", "hotmail", "com", "1234567")
+    print('{} - {}'.format(control1.retornaMail(), control1.getContrasena()))
+    
