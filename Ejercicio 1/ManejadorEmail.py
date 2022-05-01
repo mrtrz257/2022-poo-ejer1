@@ -8,7 +8,7 @@ class ManejadorEmail:
         self.__listaEmails = []
     def agregarMail(self, unMail):
         self.__listaEmails.append(unMail)
-    def testMails(self):
+    def testMails(self):        #Abre el archivo para su lectura y crea instancias de la clase Email
         archivo = open("direcmails.csv")
         reader = csv.reader(archivo, delimiter=';')
         band = True
@@ -24,7 +24,7 @@ class ManejadorEmail:
     def mostrarLista(self):
         for elemento in self.__listaEmails:
             print(elemento.retornaMail())
-    def buscarIdentificador(self, identificador):
+    def buscarIdentificador(self, identificador):       #Compara una id de cuenta ingresada por teclado con las instancias de la clase en la lista
         contador = 0
         for i in self.__listaEmails:
             if(identificador == i.getIdCuenta()):
