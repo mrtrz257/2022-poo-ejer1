@@ -11,15 +11,15 @@ if __name__ == '__main__':
         opcion = int(input("/-------------------/MENU/-------------------/\nOpción 1: Consultar cantidad de Millas\nOpción 2: Acumular Millas\nOpcion 3: Canjear Millas\nOpcion 4: Salir\nEligir opción: "))
         while opcion != 4:
             if opcion == 1:
-                print('El viajero tiene {}'.format(lista.getMillasdeViajero(indice)))
+                print('El viajero tiene {} millas'.format(lista.getMillasdeViajero(indice)))
             elif opcion == 2:
                 millasAacumular = int(input("Ingrese cantidad de millas para acumular: "))
                 lista.acumularMillas(indice, millasAacumular)
-                print('El viajero tiene {}'.format(lista.getMillasdeViajero(indice)))
+                print('El viajero tiene {} millas'.format(lista.getMillasdeViajero(indice)))
             elif opcion == 3:
                 millasAcanjear = int(input("Ingrese cantidad de millas a canjear: "))
                 lista.canjearMillas(indice, millasAcanjear)
-                print('El viajero tiene {}'.format(lista.getMillasdeViajero(indice)))
+                print('El viajero tiene {} millas'.format(lista.getMillasdeViajero(indice)))
             else:
                 print("Opción ingresada no corresponde")
             opcion = int(input("/-------------------/MENU/-------------------/\nOpción 1: Consultar cantidad de Millas\nOpción 2: Acumular Millas\nOpcion 3: Canjear Millas\nOpcion 4: Salir\nEligir opción: "))
