@@ -7,6 +7,8 @@ class PlanAhorro:
         self.__versionVehiculo = str(versionVehiculo)
         self.__valorVehiculo = int(valorVehiculo)
     #Metodos de Instancia
+    def __str__(self):
+        return '{} {} {} {}'.format(self.__codigoPlan, self.__modeloVehiculo, self.__versionVehiculo, self.__valorVehiculo)
     def getCodigoPlan(self):
         return int(self.__codigoPlan)
     def getModeloVehiculo(self):
