@@ -1,7 +1,13 @@
 from Email import Email
 from ManejadorEmail import ManejadorEmail
 
+def test():
+    print("TEST:")      #Crea una instancia de la clase Email y la muestra para verificar que se creo correctamente
+    control1 = Email("alumno", "hotmail", "com", "1234567")
+    print('{} - {}'.format(control1.retornaMail(), control1.getContrasena()))
+
 if __name__=='__main__':
+    test()
     nom = input("Ingrese Nombre: ")
     idcuent = input("Ingrese ID de Correo: ")
     dom = input("Ingrese Dominio de Correo: ")
@@ -26,7 +32,4 @@ if __name__=='__main__':
     if (lista.buscarIdentificador(idDeCuenta) > 1):
         print("El identificador esta repetido")
     else: print("El identificador NO se repite o NO se encontro")
-    print("TEST:")      #Crea una instancia de la clase Email y la muestra para verificar que se creo correctamente
-    control1 = Email("alumno", "hotmail", "com", "1234567")
-    print('{} - {}'.format(control1.retornaMail(), control1.getContrasena()))
     
