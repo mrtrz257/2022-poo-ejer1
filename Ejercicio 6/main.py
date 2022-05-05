@@ -1,6 +1,13 @@
+from ViajeroFrecuente import  ViajeroFrecuente
 from ManejadorViajeros import ManejadorViajero
 
+def test():
+    print("TEST:")      #Crea un objeto de la clase ViajeroFrecuente y la muestra para verificar que se creo correctamente
+    control1 = ViajeroFrecuente(5, 43340662, "Nicolas", "Garcia", 6500.89)
+    print(control1)
+
 if __name__ == '__main__':
+    test()
     lista = ManejadorViajero()
     lista.testViajeros()
     lista.ordenarLista()
