@@ -1,9 +1,12 @@
 from ManejadorRegistro import Manejador
 from Registro import Registro
 
-if __name__ =='__main__':
-    test = Registro(35, 47, 1008)       #Crea una instancia de la clase Registro y la muestra para verificar que se creo correctamente
+def test():
+    test1 = Registro(35, 47, 1008)       #Crea una instancia de la clase Registro y la muestra para verificar que se creo correctamente
     print('TEST: Temperatura: {}° - Humedad: {}% - Presion Atmosferica {} hPa'.format(test.getTemperatura(), test.getHumedad(), test.getPresion()))
+
+if __name__ =='__main__':
+    test()
     lista = Manejador()
     dias = lista.cantidadDias()
     lista.crearLista(dias)
